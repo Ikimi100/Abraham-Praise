@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/app/pastor-abraham-praise/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/app/pastor-abraham-praise/$1"
+    }
+  ]
+}
