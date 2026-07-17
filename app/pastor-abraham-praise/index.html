@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  ============================================================================
+  PASTOR ABRAHAM PRAISE — MINISTRY LANDING PAGE
+  ============================================================================
+  Static site: index.html + style.css + script.js. No build step required.
+  Push these three files to a GitHub repo and enable GitHub Pages — done.
+
+  BEFORE PUBLISHING, REPLACE THE FOLLOWING PLACEHOLDER CONTENT:
+    1. Bio paragraph            → About section   (search "REPLACE: bio paragraph")
+    2. Portrait & ministry photos → all https://placehold.co/ image URLs
+    3. Speaking topics          → Speaking section (search "REPLACE: topic")
+    4. Testimonial quotes/names → Testimonials    (search "REPLACE: testimonial")
+    5. Event names/dates/venues → Events section  (search "REPLACE: event")
+    6. YouTube embed URL        → Media section   (search "REPLACE: YouTube")
+    7. Contact email & phone    → Contact section + Footer (search "REPLACE: contact")
+    8. Social media URLs        → Footer (href="#" placeholders)
+    9. Booking form handling    → see comment in the Contact form and in script.js
+                                  (currently a mailto: fallback; swap in Formspree
+                                  for real form submissions)
+  ============================================================================
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastor Abraham Praise — Church Growth Trainer · Conference Speaker · Life Coach</title>
+  <meta name="description" content="Pastor Abraham Praise is a certified church growth trainer, conference speaker, life coach, revivalist and worship leader carrying a prophetic grace. Book him for your next conference, summit or church event." />
+
+  <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__brand" href="#top">Pastor Abraham Praise</a>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#ministry">Ministry</a></li>
+        <li><a class="nav__link" href="#speaking">Speaking</a></li>
+        <li><a class="nav__link" href="#events">Events</a></li>
+        <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--gold">Welcome</p>
+          <h1 class="hero__title" id="hero-title">Pastor Abraham Praise</h1>
+          <p class="hero__roles">
+            Church Growth Trainer <span class="hero__dot" aria-hidden="true">·</span>
+            Conference Speaker <span class="hero__dot" aria-hidden="true">·</span>
+            Life Coach <span class="hero__dot" aria-hidden="true">·</span>
+            Revivalist <span class="hero__dot" aria-hidden="true">·</span>
+            Worship Leader
+          </p>
+          <div class="hero__ctas">
+            <a class="btn btn--gold" href="#contact">Book Pastor Abraham</a>
+            <a class="btn btn--outline-light" href="#about">Learn More</a>
+            <a class="btn btn--whatsapp" href="https://wa.me/2348037869734" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <!-- Hero portrait -->
+          <img src="images/hero-portrait.jpg"
+               alt="Portrait of Pastor Abraham Praise" width="800" height="1000" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT / BIO ======================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <!-- Ministry / lifestyle photo -->
+          <img src="images/ministry-photo.png"
+               alt="Pastor Abraham Praise ministering during a conference session" width="700" height="860" />
+        </div>
+
+        <div class="about__body reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A Shepherd with a Mandate for Growth &amp; Revival</h2>
+          <div class="divider" aria-hidden="true"></div>
+
+          <!-- REPLACE: bio paragraph (3–4 sentences about Pastor Abraham's story, calling and experience) -->
+          <p>Pastor Abraham Praise is a certified church growth trainer, conference speaker, and life coach
+             specializing in leadership and relationships. A revivalist and worship leader carrying a prophetic
+             grace, he has dedicated his life to equipping churches, raising leaders, and stirring hunger for God
+             across nations. His ministry blends deep scriptural insight with practical wisdom, leaving audiences
+             both transformed and equipped. He is married and serves with his family in [City, Country].</p>
+
+          <p class="about__signature">— Pastor Abraham Praise</p>
+          <a class="btn btn--navy" href="#contact">Invite Him to Minister</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MINISTRY PILLARS ======================= -->
+    <section class="section pillars" id="ministry" aria-labelledby="ministry-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Ministry</p>
+          <h2 id="ministry-title">Six Expressions of One Calling</h2>
+          <div class="divider divider--center" aria-hidden="true"></div>
+        </header>
+
+        <div class="pillars__grid">
+          <!-- Pillar 1 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v3"/><path d="M10.5 3.5h3"/>
+                <path d="M5 21v-8l7-5 7 5v8"/><path d="M3 21h18"/>
+                <path d="M10 21v-4a2 2 0 0 1 4 0v4"/>
+              </svg>
+            </span>
+            <h3>Church Growth Training</h3>
+            <p>Equipping pastors and leadership teams with proven, Spirit-led strategies for healthy, sustainable church growth.</p>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2" width="6" height="12" rx="3"/>
+                <path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/>
+              </svg>
+            </span>
+            <h3>Conference Speaking</h3>
+            <p>Dynamic, revelatory teaching that stirs faith and imparts fresh vision at conferences, summits, and leadership gatherings.</p>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+              </svg>
+            </span>
+            <h3>Life Coaching</h3>
+            <p>Leadership &amp; relationship coaching that builds strong leaders, healthy marriages, and thriving families — one conversation at a time.</p>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+            </span>
+            <h3>Revival Ministry</h3>
+            <p>Carrying the fire of awakening to cities and congregations — calling the Church back to prayer, holiness, and first love.</p>
+          </article>
+
+          <!-- Pillar 5 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </span>
+            <h3>Worship Leadership</h3>
+            <p>Leading congregations into deep, intimate encounters with God through Spirit-filled, heart-felt worship.</p>
+          </article>
+
+          <!-- Pillar 6 -->
+          <article class="pillar-card reveal">
+            <span class="pillar-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </span>
+            <h3>Prophetic Ministry</h3>
+            <p>Ministering with a prophetic grace that brings clarity, direction, and encouragement to individuals, leaders, and churches.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SPEAKING TOPICS / PROGRAMS ======================= -->
+    <section class="section speaking" id="speaking" aria-labelledby="speaking-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--gold">Speaking &amp; Training</p>
+          <h2 id="speaking-title" class="on-dark">Signature Topics &amp; Programs</h2>
+          <div class="divider divider--center" aria-hidden="true"></div>
+        </header>
+
+        <ol class="speaking__list">
+          <!-- REPLACE: topic 1 — title & description -->
+          <li class="topic reveal">
+            <span class="topic__num" aria-hidden="true">01</span>
+            <div>
+              <h3>Building a Growing, Healthy Church</h3>
+              <p>A practical training for pastors and teams on the systems, culture, and leadership behind sustained church growth.</p>
+            </div>
+          </li>
+          <!-- REPLACE: topic 2 — title & description -->
+          <li class="topic reveal">
+            <span class="topic__num" aria-hidden="true">02</span>
+            <div>
+              <h3>Leadership That Lasts</h3>
+              <p>Character, capacity, and the inner life of a leader — how to finish well in ministry, business, and family.</p>
+            </div>
+          </li>
+          <!-- REPLACE: topic 3 — title & description -->
+          <li class="topic reveal">
+            <span class="topic__num" aria-hidden="true">03</span>
+            <div>
+              <h3>Marriage &amp; Relationships God&rsquo;s Way</h3>
+              <p>Timeless wisdom for singles, couples, and families — building covenant relationships that thrive.</p>
+            </div>
+          </li>
+          <!-- REPLACE: topic 4 — title & description -->
+          <li class="topic reveal">
+            <span class="topic__num" aria-hidden="true">04</span>
+            <div>
+              <h3>Hosting Revival</h3>
+              <p>Preparing hearts, altars, and congregations for a genuine move of God — and stewarding what He begins.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= TESTIMONIALS ======================= -->
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="testimonials-title">Lives &amp; Churches Transformed</h2>
+          <div class="divider divider--center" aria-hidden="true"></div>
+        </header>
+
+        <div class="carousel reveal" data-carousel aria-roledescription="carousel" aria-label="Testimonials">
+          <div class="carousel__track" aria-live="polite">
+            <!-- REPLACE: testimonial 1 — quote, name & title -->
+            <figure class="carousel__slide is-active">
+              <blockquote>&ldquo;Pastor Abraham&rsquo;s training completely reshaped our leadership culture. Within a year, our church grew in depth and in number — and our team is healthier than ever.&rdquo;</blockquote>
+              <figcaption>
+                <cite>Pastor J. Matthews</cite>
+                <span>Senior Pastor, Grace City Church</span>
+              </figcaption>
+            </figure>
+
+            <!-- REPLACE: testimonial 2 — quote, name & title -->
+            <figure class="carousel__slide">
+              <blockquote>&ldquo;Few speakers carry both the fire of revival and the wisdom of a coach. Our conference delegates are still talking about his sessions months later.&rdquo;</blockquote>
+              <figcaption>
+                <cite>Dr. S. Adeyemi</cite>
+                <span>Convener, Arise Leaders Conference</span>
+              </figcaption>
+            </figure>
+
+            <!-- REPLACE: testimonial 3 — quote, name & title -->
+            <figure class="carousel__slide">
+              <blockquote>&ldquo;His coaching saved my marriage and sharpened my leadership. I lead my home and my organization with clarity I never had before.&rdquo;</blockquote>
+              <figcaption>
+                <cite>Mr. D. Okafor</cite>
+                <span>Coaching Client &amp; Business Executive</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="carousel__btn" type="button" data-carousel-prev aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="carousel__dots" role="tablist" aria-label="Choose testimonial"></div>
+            <button class="carousel__btn" type="button" data-carousel-next aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= UPCOMING EVENTS ======================= -->
+    <section class="section events" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Events</p>
+          <h2 id="events-title">Upcoming Engagements</h2>
+          <div class="divider divider--center" aria-hidden="true"></div>
+        </header>
+
+        <div class="events__grid">
+          <!-- REPLACE: event 1 — name, date, location, details link -->
+          <article class="event-card reveal">
+            <p class="event-card__date">Coming soon</p>
+            <h3>Ignite Revival Conference</h3>
+            <p class="event-card__location">Lagos, Nigeria</p>
+            <a class="btn btn--small btn--outline-navy" href="#" aria-label="Details for Ignite Revival Conference">Details</a>
+          </article>
+
+          <!-- REPLACE: event 2 — name, date, location, details link -->
+          <article class="event-card reveal">
+            <p class="event-card__date">Coming soon</p>
+            <h3>Church Growth Summit</h3>
+            <p class="event-card__location">Accra, Ghana</p>
+            <a class="btn btn--small btn--outline-navy" href="#" aria-label="Details for Church Growth Summit">Details</a>
+          </article>
+
+          <!-- REPLACE: event 3 — name, date, location, details link -->
+          <article class="event-card reveal">
+            <p class="event-card__date">Coming soon</p>
+            <h3>Worship &amp; The Word Night</h3>
+            <p class="event-card__location">Abuja, Nigeria</p>
+            <a class="btn btn--small btn--outline-navy" href="#" aria-label="Details for Worship and The Word Night">Details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MEDIA / GALLERY ======================= -->
+    <section class="section gallery" id="media" aria-labelledby="media-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Media</p>
+          <h2 id="media-title">Moments from the Ministry</h2>
+          <div class="divider divider--center" aria-hidden="true"></div>
+        </header>
+
+        <!-- REPLACE: gallery images — swap all placehold.co URLs for real photos -->
+        <div class="gallery__grid reveal">
+          <img src="images/gallery-conference.jpg" alt="Pastor Abraham Praise speaking at a conference" loading="lazy" width="600" height="400" />
+          <img src="images/gallery-worship-night.jpg" alt="Worship night led by Pastor Abraham Praise" loading="lazy" width="600" height="400" />
+          <img src="images/gallery-leadership-training.jpg" alt="Leadership training session with church leaders" loading="lazy" width="600" height="400" />
+          <img src="images/gallery-church-service.jpg" alt="Sunday service ministration" loading="lazy" width="600" height="400" />
+          <img src="images/gallery-coaching-session.jpg" alt="One-on-one life coaching session" loading="lazy" width="600" height="400" />
+          <img src="images/gallery-revival-meeting.jpg" alt="Revival meeting with congregation praying" loading="lazy" width="600" height="400" />
+        </div>
+
+        <!-- REPLACE: YouTube video — swap VIDEO_ID in the src below for a sermon or conference clip -->
+        <div class="video-embed reveal">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                  title="Sermon video by Pastor Abraham Praise"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT / BOOKING ======================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="eyebrow eyebrow--gold">Contact</p>
+          <h2 id="contact-title" class="on-dark">Book Pastor Abraham</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p>For conference invitations, church growth training, coaching engagements, and revival meetings, send a booking request and the ministry office will respond within 2–3 working days.</p>
+
+          <ul class="contact__details">
+            <!-- REPLACE: contact email address -->
+            <li><span class="contact__label">Email</span> <a href="mailto:Abrahampraiseworld@yahoo.com">Abrahampraiseworld@yahoo.com</a></li>
+            <!-- REPLACE: contact phone number -->
+            <li><span class="contact__label">Phone</span> <a href="tel:+2348037869734">+234 803 786 9734</a></li>
+          </ul>
+        </div>
+
+        <!--
+          FORM HANDLING (static site — no backend):
+          This form currently uses a mailto: fallback (see script.js) that opens the
+          visitor's email client with a pre-filled booking request.
+
+          TO USE FORMSPREE (or similar) FOR REAL SUBMISSIONS:
+            1. Create a free form at https://formspree.io and copy your form ID.
+            2. Change this tag to:
+               <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            3. Delete the mailto submit handler in script.js (section 5).
+        -->
+        <form class="contact__form reveal" id="booking-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="field-name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="field-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="field-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="field-email" name="email" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="field-org">Organization / Church</label>
+              <input type="text" id="field-org" name="organization" autocomplete="organization" />
+            </div>
+            <div class="form-field">
+              <label for="field-date">Event Date</label>
+              <input type="date" id="field-date" name="event_date" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="field-message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="field-message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn--gold btn--full" type="submit">Send Booking Request</button>
+          <p class="form-note" id="form-note">This form opens your email app with a pre-filled message — no account needed.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <a class="floating-whatsapp" href="https://wa.me/2348037869734" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.149-.67.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.174.199-.297.299-.495.099-.198.05-.372-.025-.521-.075-.149-.67-1.612-.92-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.372-.01-.571-.01-.198 0-.521.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.073.149.198 2.099 3.2 5.076 4.487.708.305 1.261.488 1.693.625.709.226 1.354.194 1.864.118.569-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.174-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12.001 2.002a9.998 9.998 0 0 0-8.484 15.17L2.01 20.001l2.863-1.004A9.99 9.99 0 1 0 12.001 2.002zm0 18.2a8.2 8.2 0 0 1-4.18-1.16l-.3-.18-1.7.596 0.596-1.66-.18-.3A8.2 8.2 0 1 1 12 20.202z"/>
+    </svg>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__brand">Pastor Abraham Praise</p>
+
+      <!-- REPLACE: social media URLs (currently href="#") -->
+      <ul class="social" aria-label="Social media links">
+        <li>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2.5 12s0-3.9.5-5.6c.3-1 1-1.7 2-1.9C6.7 4 12 4 12 4s5.3 0 7 .5c1 .2 1.7.9 2 1.9.5 1.7.5 5.6.5 5.6s0 3.9-.5 5.6c-.3 1-1 1.7-2 1.9-1.7.5-7 .5-7 .5s-5.3 0-7-.5c-1-.2-1.7-.9-2-1.9C2.5 15.9 2.5 12 2.5 12z"/>
+              <path d="M10 15.5v-7l6 3.5-6 3.5z" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="X (formerly Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true">
+              <path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.8H5.7L17.8 20z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!-- REPLACE: contact email & phone -->
+      <p class="site-footer__contact">
+        <a href="mailto:Abrahampraiseworld@yahoo.com">Abrahampraiseworld@yahoo.com</a>
+        <span aria-hidden="true"> · </span>
+        <a href="tel:+2348037869734">+234 803 786 9734</a>
+      </p>
+
+      <p class="site-footer__copy">&copy; <span id="year">2026</span> Pastor Abraham Praise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
